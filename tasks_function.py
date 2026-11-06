@@ -51,7 +51,7 @@ def complete_task(tasks):
     if not view_tasks(tasks):
         return
     try:
-        choice = int(input("\nEnter the number of task you have completeda: "))
+        choice = int(input("\nEnter the number of task you have completed: "))
         index = choice - 1 # Adjust for 0 based indexing
         if 0 <= index < len(tasks):
             tasks[index]["completed"] = True
